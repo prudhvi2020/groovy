@@ -54,9 +54,4 @@ Resources:
           Value: test
         - Key: Type
           Value: AppServer
-      UserData:
-        'Fn::Base64': !Sub |
-            <powershell>
-            Import-Module AWSPowerShell
-            C:\ProgramData\Amazon\EC2-Windows\Launch\Scripts\InitializeDisks.ps1
-            </powershell>
+   
